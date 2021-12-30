@@ -1,0 +1,713 @@
+body,
+html {
+  font-size: 10px;
+  font-family: "Cairo", sans-serif;
+}
+* {
+  vertical-align: text-bottom;
+}
+a {
+  color: #da5054;
+}
+.sidebaritem {
+  cursor: pointer;
+}
+.sidebaritem svg {
+  margin-right: 1.2rem;
+  stroke-width: 5px;
+  fill: rgb(113, 117, 132);
+}
+
+.activesidebar {
+  color: rgb(238, 239, 239);
+  background: rgba(255, 255, 255, 0.131);
+}
+.activesidebar svg {
+  fill: rgb(238, 239, 239);
+}
+
+.activesubsidebar {
+  color: rgb(100, 82, 231);
+  font-weight: 700;
+  background: rgba(91, 115, 232, 0.27);
+}
+.activesubsidebar svg {
+  fill: rgb(100, 82, 231) !important;
+}
+.secondsidebar svg {
+  fill: #949090;
+}
+.secondsidebar:hover {
+  color: rgb(100, 82, 231);
+
+  background: rgba(91, 115, 232, 0.27);
+}
+.secondsidebar:hover svg {
+  fill: rgb(100, 82, 231);
+}
+
+.inputtable td {
+  vertical-align: middle;
+
+  padding: 1.1rem 1.5rem;
+}
+.inputtable2 td {
+  vertical-align: middle;
+
+  padding: 1.1rem 0.5rem !important;
+}
+
+input {
+  outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+.numberinput {
+  text-indent: 1rem;
+  font-size: 1.5rem;
+}
+#table tbody {
+  width: 100%;
+  display: table;
+  border-radius: 20rem;
+}
+.checboxinput {
+  left: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 40;
+}
+
+.checkmark {
+  z-index: 30;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 2px solid #ddd;
+}
+.checkmark:after {
+  content: "";
+  width: 1.1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 1.5px;
+  height: 1.1rem;
+  background-color: #ddd;
+  transform: translate(-50%, -50%);
+}
+.checboxinput:checked ~ .checkmark:after {
+  background-color: rgb(100, 82, 231);
+}
+.checboxinput:checked ~ .checkmark {
+  border: 2px solid rgb(100, 82, 231);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3.9rem;
+  height: 2.4rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.togggleslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.togggleslider:before {
+  position: absolute;
+  content: "";
+  height: 1.9rem;
+  width: 1.9rem;
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .togggleslider {
+  background-color: rgb(100, 82, 231);
+}
+
+.togggleinput:focus + .togggleslider {
+  box-shadow: 0 0 1px rgb(100, 82, 231);
+}
+
+.togggleinput:checked + .togggleslider:before {
+  -webkit-transform: translate(14px, -50%);
+  -ms-transform: translate(14px, -50%);
+  transform: translate(14px, -50%);
+}
+
+.togggleslider:before {
+  border-radius: 50%;
+}
+
+.radiobutton label {
+  display: block;
+  position: relative;
+  height: 2.6rem;
+  width: 2.6rem;
+}
+
+.radioinput {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.radiocheck {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border: 1.8px solid #ddd;
+
+  border-radius: 50%;
+  transition: 0.4s all;
+}
+
+.radiocheck::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #ddd;
+  transform: translate(-50%, -50%);
+  height: 1.5rem;
+  border-radius: 50%;
+  width: 1.5rem;
+}
+.radioinput:checked ~ .radiocheck {
+  border-color: rgb(100, 82, 231);
+}
+.radioinput:checked ~ .radiocheck::before {
+  background-color: rgb(100, 82, 231);
+}
+
+.backgroundblur {
+  background-color: white;
+  filter: blur(0.4rem);
+  -webkit-filter: blur(0.4rem);
+}
+
+.trasition {
+  transition: 0.5s all;
+}
+
+.sidebar {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e5e5e5;
+}
+.sidebar p {
+  padding-top: 1rem;
+  text-align: left;
+  padding-left: 3.7rem;
+  padding-bottom: 1rem;
+}
+
+.roomtable {
+  font-size: 14px;
+}
+.roomtable th,
+.roomtable td {
+  padding: 20px 5px;
+  text-align: center;
+}
+.roomtable thead th {
+  font-weight: 500;
+  color: rgb(121, 124, 141);
+  background-color: rgb(244, 245, 247);
+}
+.roomtable .activetr {
+  transform: scale(1);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+.serveytable {
+  font-size: 14px;
+}
+.serveytable th {
+  padding: 20px 5px;
+  text-align: center;
+}
+.serveytable td {
+  vertical-align: middle;
+  padding: 7px 5px;
+  text-align: center;
+}
+.serveytable thead th {
+  font-weight: 500;
+  color: rgb(121, 124, 141);
+  background-color: rgb(244, 245, 247);
+}
+.serveytable .activetr {
+  transform: scale(1);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+select {
+  background: white;
+}
+
+.survey-btn-active {
+  padding: 10px 8px;
+  background-color: #f5f7f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+a:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.hover {
+  opacity: 0;
+  backface-visibility: hidden;
+  bottom: -40%;
+  overflow: hidden;
+  transition: all 0.5s;
+  transform-origin: bottom;
+}
+.perents:hover .hover {
+  bottom: 35%;
+
+  opacity: 1;
+  backface-visibility: visible;
+}
+.bar::before {
+  content: "";
+  background: inherit;
+  width: 7px;
+  height: 7px;
+  display: block;
+  position: absolute;
+  left: 133px;
+  top: -4px;
+  transform: rotate(135deg);
+  border-radius: 0 0 0 2px;
+  box-shadow: -1px 3px 3px -1px rgb(0 0 0 / 25%);
+}
+
+.displayin {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.tabin {
+  opacity: 1 !important;
+  visibility: visible !important;
+  height: 375px;
+}
+
+/* app webapp users style */
+
+.active {
+  border: 1px solid;
+  border-radius: 6px;
+}
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999999;
+}
+.img {
+  opacity: 0.5;
+  width: 15px;
+  height: 15px;
+}
+.i:hover .icon-name {
+  display: inline;
+}
+.i:hover .img {
+  opacity: 1;
+}
+
+.icon-name {
+  display: none;
+  position: relative;
+  background-color: black;
+}
+.icon-name::before {
+  content: "";
+  background: inherit;
+  width: 7px;
+  height: 7px;
+  display: block;
+  position: absolute;
+  left: 12px;
+  top: -4px;
+  transform: rotate(135deg);
+  border-radius: 0 0 0 2px;
+}
+.displayin {
+  opacity: 1 !important
+  ;
+  visibility: visible !important;
+}
+button {
+  outline: none !important;
+}
+.active {
+  border: 1px solid;
+  border-radius: 6px;
+}
+.mainsidebar-width {
+  width: 23rem;
+}
+.hiddenlogo {
+  display: none;
+}
+.spaker::before {
+  content: "";
+  background: inherit;
+  width: 7px;
+  height: 7px;
+  display: block;
+  position: absolute;
+  left: 118px;
+  top: -4px;
+  transform: rotate(135deg);
+  border-radius: 0 0 0 2px;
+  box-shadow: -1px 3px 3px -1px rgb(0 0 0 / 25%);
+}
+.logo::before {
+  content: "";
+  background: inherit;
+  width: 7px;
+  height: 7px;
+  display: block;
+  position: absolute;
+  left: 109px;
+  top: -4px;
+  transform: rotate(135deg);
+  border-radius: 0 0 0 2px;
+  box-shadow: -1px 3px 3px -1px rgb(0 0 0 / 25%);
+}
+/* input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 1rem 2rem rgb(0 0 0 / 11%);
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 11%);
+  border-bottom: 3px solid rgba(10, 119, 10, 0.959);
+}
+input:focus:invalid {
+  border-bottom: 3px solid rgba(59, 36, 158, 0.959);
+} */
+
+input:invalid + .fa {
+  filter: grayscale(1) !important;
+
+  opacity: 0.5;
+}
+
+.fa {
+  filter: grayscale(0) !important;
+}
+.sponsors::before {
+  content: "";
+  background: inherit;
+  width: 7px;
+  height: 7px;
+  display: block;
+  position: absolute;
+  left: 110px;
+  top: -4px;
+  transform: rotate(135deg);
+  border-radius: 0 0 0 2px;
+  box-shadow: -1px 3px 3px -1px rgb(0 0 0 / 25%);
+}
+.overlay2 {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 999999;
+}
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to right, #fff, #674ab4);
+  outline: none;
+
+  overflow-y: visible;
+}
+
+.slider::-webkit-slider-thumb {
+  /* -webkit-appearance: none; */
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #000000;
+  cursor: pointer;
+  margin-bottom: 35px;
+  clip-path: polygon(75% 0, 13% 0, 46% 100%);
+}
+.fields-hover:hover {
+  border: 1px dashed #a5a4bd;
+}
+
+/* event app 1 hover */
+.hover-img {
+  opacity: 0;
+  backface-visibility: hidden;
+  bottom: -50%;
+  left: 40%;
+  overflow: hidden;
+  transition: all 0.5s;
+  transform-origin: bottom;
+}
+.event-perents:hover .hover-img {
+  bottom: 40%;
+
+  opacity: 1;
+  backface-visibility: visible;
+}
+.event-perents:hover .event-img {
+  opacity: 0.5;
+}
+
+.landing-page-side-bar {
+  width: 530px;
+}
+.landing-page-item-width {
+  width: 330px;
+}
+.i1 {
+  background-image: url(../img/img-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.i2 {
+  background-image: url(../img/img-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.i3 {
+  background-image: url(../img/img-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.i4 {
+  background-image: url(../img/img-4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  width: 500% !important;
+  height: 100%;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20% !important;
+  transition: 2s;
+  height: 100%;
+}
+
+/* .slide img {
+  width: 100%;
+  height: 100%;
+} */
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+  position: absolute;
+  width: 110%;
+  margin-top: -54px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #f7f7f7;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+.manual-btn:hover {
+  background: #f7f7f7;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 110%;
+  justify-content: center;
+  /* margin-top: 60px; */
+  bottom: 40px;
+}
+
+.navigation-auto div {
+  border: 2px solid #f7f7f7;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #949494;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #949494;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #949494;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #949494;
+}
+
+@media only screen and (max-width: 1300px) {
+  .landing-page-side-bar {
+    width: 520px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .landing-page-side-bar {
+    width: 500px;
+  }
+  .landing-page-item-width {
+    width: 320px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .landing-page-side-bar {
+    width: 470px;
+  }
+  .landing-page-item-width {
+    width: 290px;
+  }
+  .right-side {
+    display: none;
+  }
+  .left-side {
+    width: 100%;
+  }
+  .landing-page-side-bar {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .left-side {
+    width: 100%;
+  }
+  .landing-page-side-bar {
+    width: 100%;
+  }
+}
+.cancle-btn,
+.submit {
+  text-transform: uppercase;
+  padding: 6px 20px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 40px;
+  background: #c4c4c4;
+  transition: all 0.3s;
+}
+.submit {
+  background-color: #6452e7 !important;
+}
+.cancle-btn:hover {
+  background-color: #6452e7 !important;
+}
+
+/* slider start*/
+.slide {
+  width: 100% !important;
+  height: 100vh !important;
+}
+.active {
+  border: none !important;
+  border-radius: 0% !important;
+}
+/* slider end*/

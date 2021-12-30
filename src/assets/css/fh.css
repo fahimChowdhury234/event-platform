@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  border: none;
+  outline: none;
+}
+
+.landing-page-item-width .logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.landing-page-item-width .logo-heading {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: #5b73e8;
+}
+.logo-title {
+  padding: 50px 0;
+}
+.logo-title span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: red;
+  cursor: pointer;
+}
+.landing-page-item-width .lock {
+  width: 13px;
+  height: 13px;
+}
+.landing-page-item-width .input-pass {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 14px;
+  color: #7b8190;
+  width: 100%;
+  border: none;
+}
+.forget-password {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: #565656;
+  cursor: pointer;
+}
+.submit-btn {
+  text-transform: uppercase;
+  padding: 7px 20px;
+  background: #5b73e8;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 40px;
+}
+.sponsors {
+  width: 330px;
+  border-bottom: 0.5px solid #afb1b3;
+  padding: 5px 0;
+}
+.sponsors span {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  color: #1a1a1a;
+}
+.sponsors-logo {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
+}
+
+.sponsors-logo img {
+  width: 90px;
+  height: 90px;
+  border: 0.5px solid #c4c4c4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.event-timer-perent {
+  padding: 40px 0;
+}
+.event-timer-perent span {
+  font-size: 14px;
+  color: #565656;
+}
+.event-timer-child {
+  text-align: center;
+}
+.event-timer-child span {
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  color: #5b73e8;
+}
+.sending-email {
+  display: flex;
+  align-items: center;
+  width: 330px;
+  border-bottom: 1px solid #5b73e8;
+}
+.sending-email img {
+  width: 13px;
+  height: 17px;
+}
+
+.sending-email input {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 14px;
+  color: #565656;
+  width: 100%;
+  border: none;
+}
+.landing-page-form {
+  width: 330px;
+  padding: 50px 0px;
+}
+.landing-page-form input {
+  width: 100%;
+  padding: 7px 0;
+  background-color: transparent;
+  border-bottom: 2px solid #5b73e8 !important;
+  font-size: 14px;
+  color: #565656;
+  border: none;
+}
+.select-option {
+  width: 35%;
+  background-color: transparent;
+  border-bottom: 2px solid #5b73e8;
+  font-size: 14px;
+  color: #565656;
+}
+.select-option select {
+  width: 100%;
+  font-size: 14px;
+  color: #565656;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+.different-user {
+  font-size: 16px;
+  color: #565656;
+  font-weight: 700;
+  cursor: pointer;
+}
+.login {
+  padding: 30px 0;
+}
+.login span {
+  font-size: 14px;
+  color: #565656;
+  text-align: center;
+  display: block;
+}
+.login-social-meadia {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.login-social-meadia img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.side-border-perent {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.side-border {
+  width: 150px;
+  padding: 0.5px;
+  background-color: #d7d5d5;
+}
+
+.side-border-text {
+  font-size: 16px;
+  color: #565656;
+  display: block;
+}
+.login-otp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-otp span {
+  font-size: 12px;
+  color: #565656;
+  font-weight: 700;
+}
+
+.login-otp-number {
+  padding: 7px 15px;
+  border-radius: 6px;
+  border: 1px solid #c4c4c4;
+  cursor: pointer;
+}
+
+.login-otp-number span {
+  font-size: 23px;
+  color: #000;
+  font-weight: 600;
+}
+.otp-Code-expires span {
+  font-size: 14px;
+  color: #565656;
+  font-weight: 700;
+}
+.otp-Code-expires .otp-red {
+  font-size: 14px;
+
+  font-weight: 700;
+  color: red;
+  vertical-align: baseline;
+}

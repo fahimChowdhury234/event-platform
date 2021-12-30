@@ -1,0 +1,36 @@
+.agent-info-text ul li a,
+.agent-contact-option ul li a,
+.profile-option ul li a {
+    background: #6449E7;
+}
+
+.profile-option ul li a:hover,
+.agent-info-text ul li a:hover {
+    background-color: transparent;
+    color: #6449E7;
+    border-color: #6449E7;
+}
+
+.profile-ratings .rating__icon--star {
+    color: #6449E7;
+}
+
+.contact-info li span {
+    background: #6449E7;
+}
+
+.btn.v1 {
+    background: #6449E7;
+}
+
+.rm-btn-right a {
+    background: #6449E7;
+}
+
+.dl-item-info p {
+    color: #6449E7;
+}
+
+.chat-field button.submit-btn {
+    background: #6449E7;
+}

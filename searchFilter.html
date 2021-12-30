@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <title>Search Filter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+
+<body>
+    <div class="overlay">
+<div class="container">
+        <div class="searchFilterMainDiv">
+            <div class="sortFilterSearchHeadingMainDiv">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-6">
+                        <div class="sortInnerDiv">
+                            <span>
+
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 489.389 489.389" style="enable-background:new 0 0 489.389 489.389;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M261.294,326.102c-8.3-7.3-21.8-6.2-29.1,2.1l-77,86.8v-346.9c0-11.4-9.4-20.8-20.8-20.8s-20.8,9.4-20.8,20.8v346.9
+                                                l-77-86.8c-8.3-8.3-20.8-9.4-29.1-2.1c-8.3,8.3-9.4,20.8-2.1,29.1l113.4,126.9c8.5,10.5,23.5,8.9,30.2,0l114.4-126.9
+                                                C270.694,347.002,269.694,333.402,261.294,326.102z" />
+                                            <path d="M483.994,134.702l-112.4-126.9c-10-10.1-22.5-10.7-31.2,0l-114.4,126.9c-7.3,8.3-6.2,21.8,2.1,29.1
+                                                c12.8,10.2,25.7,3.2,29.1-2.1l77-86.8v345.9c0,11.4,9.4,20.8,20.8,20.8s20.8-8.3,20.8-19.8v-346.8l77,86.8
+                                                c8.3,8.3,20.8,9.4,29.1,2.1C490.194,155.502,491.294,143.002,483.994,134.702z"
+                                            />
+                                </svg>
+
+                            </span>
+                            <span class="text">
+                                SORT BY
+                            </span>
+
+                            <span>
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g id="arrow-drop-down">
+                                            <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+
+                                </svg>
+
+                            </span>
+                        </div>
+                        <div class="sortInnerDiv">
+                            <span>
+
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    width="971.986px" height="971.986px" viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 971.986 971.986;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3
+                                        c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873
+                                        c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z" />
+                                </svg>
+                            </span>
+                            <span class="text">
+                                FILTER
+                            </span>
+
+                            <span>
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g id="arrow-drop-down">
+                                            <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+
+                                </svg>
+
+                            </span>
+                        </div>
+
+                        <div class="sortInnerDiv">
+
+                            <span class="text">
+                                ADVANCED FILTER
+                            </span>
+
+                            <span>
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g id="arrow-drop-down">
+                                            <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+
+                                </svg>
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-4">
+                        <div class="rightSideSearchMainDiv">
+                            <input type="text" name="" id="" placeholder="Search">
+                            <div class="searchIconDiv">
+
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667
+                                                S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732
+                                                c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667
+                                                c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z"
+                                            />
+
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchAndFilterAreaMainDiv">
+                    <div class="leftSideFilterTypeDiv">
+                        <div class="eachOptionDiv" id="tab1" onclick="handleTabChange('tab1')">
+                            Interest
+                        </div>
+                        <div class="eachOptionDiv" id="tab2" onclick="handleTabChange('tab2')">
+                            Option 2
+                        </div>
+                        <div class="eachOptionDiv " id="tab3" onclick="handleTabChange('tab3')">
+                            Option 3
+                        </div>
+                    </div>
+                    <div class="rightsideOptionsDiv">
+                        <div class="searchFilterInputMainDiv">
+                            <input type="text" name="" id="" placeholder="Search...">
+                        </div>
+                        <div class="selectedFilterMainDiv">
+                            <div class="eachSelectedFilter">
+                                <span>Health & Wealth</span>
+                                <span>
+
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 511.76 511.76" style="enable-background:new 0 0 511.76 511.76;" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <path d="M436.896,74.869c-99.84-99.819-262.208-99.819-362.048,0c-99.797,99.819-99.797,262.229,0,362.048
+                                                    c49.92,49.899,115.477,74.837,181.035,74.837s131.093-24.939,181.013-74.837C536.715,337.099,536.715,174.688,436.896,74.869z
+                                                    M361.461,331.317c8.341,8.341,8.341,21.824,0,30.165c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251
+                                                    l-75.413-75.435l-75.392,75.413c-4.181,4.16-9.643,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251
+                                                    c-8.341-8.341-8.341-21.845,0-30.165l75.392-75.413l-75.413-75.413c-8.341-8.341-8.341-21.845,0-30.165
+                                                    c8.32-8.341,21.824-8.341,30.165,0l75.413,75.413l75.413-75.413c8.341-8.341,21.824-8.341,30.165,0
+                                                    c8.341,8.32,8.341,21.824,0,30.165l-75.413,75.413L361.461,331.317z" />
+
+                                    </svg>
+
+                                </span>
+                            </div>
+
+                            <div class="eachSelectedFilter">
+                                <span>Ecommerce & Retail</span>
+                                <span>
+
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 511.76 511.76" style="enable-background:new 0 0 511.76 511.76;" xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <path d="M436.896,74.869c-99.84-99.819-262.208-99.819-362.048,0c-99.797,99.819-99.797,262.229,0,362.048
+                                                        c49.92,49.899,115.477,74.837,181.035,74.837s131.093-24.939,181.013-74.837C536.715,337.099,536.715,174.688,436.896,74.869z
+                                                        M361.461,331.317c8.341,8.341,8.341,21.824,0,30.165c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251
+                                                        l-75.413-75.435l-75.392,75.413c-4.181,4.16-9.643,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251
+                                                        c-8.341-8.341-8.341-21.845,0-30.165l75.392-75.413l-75.413-75.413c-8.341-8.341-8.341-21.845,0-30.165
+                                                        c8.32-8.341,21.824-8.341,30.165,0l75.413,75.413l75.413-75.413c8.341-8.341,21.824-8.341,30.165,0
+                                                        c8.341,8.32,8.341,21.824,0,30.165l-75.413,75.413L361.461,331.317z"
+                                                />
+
+                                    </svg>
+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="clearAllDiv">
+                            <span>Clear All </span>
+                        </div>
+                        <div class="listOfFiltersMainDiv" id="option1">
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+                            <div class="eachFilterOption">
+                                Oman
+                            </div>
+                            <div class="eachFilterOption">
+                                Muscat
+                            </div>
+                            <div class="eachFilterOption">
+                                Austalia
+                            </div>
+                            <div class="eachFilterOption">
+                                India
+                            </div>
+                            <div class="eachFilterOption">
+                                Egypt
+                            </div>
+                            <div class="eachFilterOption">
+                                Barka
+                            </div>
+                            <div class="eachFilterOption">
+                                Option 1
+                            </div>
+                            <div class="eachFilterOption">
+                                Option 2
+                            </div>
+                        </div>
+                        <div class="listOfFiltersMainDiv" id="option2">
+
+                            <div class="eachFilterOption">
+                                Austalia
+                            </div>
+                            <div class="eachFilterOption">
+                                India
+                            </div>
+                            <div class="eachFilterOption">
+                                Egypt
+                            </div>
+                            <div class="eachFilterOption">
+                                Barka
+                            </div>
+                            <div class="eachFilterOption">
+                                Option 1
+                            </div>
+                            <div class="eachFilterOption">
+                                Option 2
+                            </div>
+                        </div>
+                        <div class="listOfFiltersMainDiv" id="option3">
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+
+                            <div class="eachFilterOption">
+                                Option 1
+                            </div>
+                            <div class="eachFilterOption">
+                                Option 2
+                            </div>
+
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+
+                            <div class="eachFilterOption">
+                                Option 1
+                            </div>
+                            <div class="eachFilterOption">
+                                Option 2
+                            </div>
+
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+
+                            <div class="eachFilterOption">
+                                Option 1
+                            </div>
+                            <div class="eachFilterOption">
+                                Option 2
+                            </div>
+
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+
+                            <div class="eachFilterOption">
+                                Option 1
+                            </div>
+                            <div class="eachFilterOption">
+                                Option 2
+                            </div>
+
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+
+                            <div class="eachFilterOption">
+                                Option 1
+                            </div>
+                            <div class="eachFilterOption">
+                                Option 2
+                            </div>
+
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+
+                            <div class="eachFilterOption">
+                                Option 1
+                            </div>
+                            <div class="eachFilterOption">
+                                Option 2
+                            </div>
+
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+
+                            <div class="eachFilterOption">
+                                Option 1
+                            </div>
+                            <div class="eachFilterOption">
+                                Option 2
+                            </div>
+
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+
+                            <div class="eachFilterOption">
+                                Option 1
+                            </div>
+                            <div class="eachFilterOption">
+                                Option 2
+                            </div>
+
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+
+                            <div class="eachFilterOption">
+                                Option 1
+                            </div>
+                            <div class="eachFilterOption">
+                                Option 2
+                            </div>
+
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+                            <div class="eachFilterOption">
+                                97
+                            </div>
+
+                            <div class="eachFilterOption">
+                                Option 1
+                            </div>
+                            <div class="eachFilterOption">
+                                Option 2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<script src="./assets/js/fahim.js"></script>
+</body>
+
+</html>
